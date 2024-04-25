@@ -10,8 +10,8 @@ public class _03_Main {
 		
 		// 재정의된 메서드 호출하여 출력
 		System.out.println("num1 + num2 = "+cal.add(num1, num2));
-		System.out.println("num1 - num2 = "+cal.substract(num1, num2));
-		System.out.println("num1 * num2 = "+cal.time(num1, num2));
+		System.out.println("num1 - num2 = "+cal.subtract(num1, num2));
+		System.out.println("num1 * num2 = "+cal.times(num1, num2));
 		System.out.println("num1 / num2 = "+cal.divide(num1, num2));
 	}
 }

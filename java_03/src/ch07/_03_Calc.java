@@ -9,7 +9,7 @@ public interface _03_Calc {
 	
 	// 추상메서드 - 컴파일과정에서 public abstract 추가
 	int add(int num1, int num2);
-	int substract(int num1, int num2);
-	int time(int num1, int num2);
+	int subtract(int num1, int num2);
+	int times(int num1, int num2);
 	int divide(int num1, int num2);
 }
