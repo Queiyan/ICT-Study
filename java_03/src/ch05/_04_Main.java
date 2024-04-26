@@ -15,5 +15,6 @@ public class _04_Main {
 			System.out.println();
 			stInfo[i].printInfo();
 		}
+		
 	}
 }
