@@ -36,6 +36,8 @@ public class _10_LoginHashMap {
 			user.put("son", "son1234");
 			user.put("choi", "choi1234");
 		
+			System.out.println("=== id,pw 등록하기 \"Q\"를 입력하면 로그인 ===");
+			
 			// put scanner
 			while(true) {
 				System.out.println("아이디를 입력하세요.");
@@ -44,7 +46,7 @@ public class _10_LoginHashMap {
 					System.out.println("종료합니다.");
 					break;
 				}
-			
+
 				else {
 					System.out.println("비밀번호를 입력하세요.");
 					String pw = sc.next();
@@ -52,7 +54,7 @@ public class _10_LoginHashMap {
 				}
 				
 			}
-			
+			// put scanner end
 			System.out.println("====== 출력 ======");
 			
 			for (Map.Entry<String, String> entry : user.entrySet() ) {
@@ -61,31 +63,34 @@ public class _10_LoginHashMap {
 				
 				System.out.println("아이디 : " + key + ", 비밀번호 : " + value);
 			}
+			
+			// login
 			while(true) {
+				System.out.println("======= 로그인 =======");
 				System.out.println("아이디를 입력해 주세요");
 				String idS = sc.next();
 				
 				if(idS.equals("q") || idS.equals("Q")) {
 					System.out.println("종료합니다.");
-					break;
+					sc.close();
+					System.exit(0);
 				}
 				
 				if(user.containsKey(idS)) {
-					
 					System.out.println("비밀번호를 입력해 주세요");
 					String pwS = sc.next();
 					if(user.containsValue(pwS)) {
-						System.out.println("로그인 성공");
+						System.out.println("=== 로그인 성공 ===");
 						
 					}else {
 						System.out.println("비밀번호가 불일치");
 						
 					}
 				}else {
-					System.out.println("입력하신 아이디가 존재하지 않습니다.");
+					System.out.println("입력하신 아이디가 존재하지 않습니다. 다시 입력해 주세요");
 					
 				}
 			}
-			sc.close();
+			
 	}
 }
