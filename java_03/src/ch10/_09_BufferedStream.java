@@ -1,4 +1,4 @@
-package ch09;
+package ch10;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
