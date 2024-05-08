@@ -1,7 +1,7 @@
 package ch12;
 
 // 2.공유영역 - 계좌이체, 잔액합계
-public class _06_SharedArea extends _06_Account{
+public class _06_SharedArea{
 
 	// 멤버변수
 	_06_Account account1; // 김태희 계좌
