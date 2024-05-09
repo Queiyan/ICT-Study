@@ -23,10 +23,12 @@ public class _06_TotalBalanceThread extends Thread{
 		for (int i = 1; i <= 3; i++) {
 			try {
 				Thread.sleep(1000); 
-				System.out.println(sharedArea.getBalanceTotal());
+				
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
+
+			System.out.println(sharedArea.getBalanceTotal());
 			
 		}
 		
